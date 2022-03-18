@@ -20,4 +20,12 @@ describe('Mommify', () => {
   it('mommify string when vowel occupies more than 30% of the whole length', () => {
     expect(mommify('bla')).toBe('blmommy')
   })
+
+  it('mommify string with any of a,e,i,o,u vowel', () => {
+    expect(mommify('bla')).toBe('blmommy')
+    expect(mommify('ble')).toBe('blmommy')
+    expect(mommify('bli')).toBe('blmommy')
+    expect(mommify('blo')).toBe('blmommy')
+    expect(mommify('blu')).toBe('blmommy')
+  })
 })
