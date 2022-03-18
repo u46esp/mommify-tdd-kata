@@ -28,4 +28,8 @@ describe('Mommify', () => {
     expect(mommify('blo')).toBe('blmommy')
     expect(mommify('blu')).toBe('blmommy')
   })
+
+  it('mommify string only once on continuous vowel', () => {
+    expect(mommify('blaeiou')).toBe('blmommy')
+  })
 })

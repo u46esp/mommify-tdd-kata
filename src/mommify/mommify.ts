@@ -10,5 +10,5 @@ const needToMommifyString = (str: string): boolean => {
 
 export const mommify = (str: string): string => {
 
-  return needToMommifyString(str) ? str.replace(/(a|e|i|o|u)/g, 'mommy') : str
+  return needToMommifyString(str) ? str.replace(/[(a|e|i|o|u)]+/g, 'mommy') : str
 };
