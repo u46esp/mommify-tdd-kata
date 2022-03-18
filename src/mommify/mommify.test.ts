@@ -12,4 +12,12 @@ describe('Mommify', () => {
   it('mommify string with single vowel', () => {
     expect(mommify('a')).toBe('mommy')
   })
+
+  it('keep string as-is when vowel takes less than 30% of the whole length', () => {
+    expect(mommify('blah')).toBe('blah')
+  })
+
+  it('mommify string when vowel occupies more than 30% of the whole length', () => {
+    expect(mommify('bla')).toBe('blmommy')
+  })
 })
